@@ -40,7 +40,7 @@ NODEJS() {
   PRINT Etract App Content
   unzip /tmp/${component}.zip &>>$LOG_FILE
 
-  PRINT Download NodeJD Dependencies
+  PRINT Download NodeJS Dependencies
   npm install &>>$LOG_FILE
 
   PRINT Start Service
