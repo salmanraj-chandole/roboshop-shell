@@ -41,6 +41,9 @@ NODEJS() {
   STAT $?
 
   PRINT Adding Application User
+  id roboshop &>>$LOG_FILE
+  if [ $? -ne 0 ]; then
+    useradd roboshop &>>$LOG_FILE
   useradd roboshop &>>$LOG_FILE
   STAT $?
 
