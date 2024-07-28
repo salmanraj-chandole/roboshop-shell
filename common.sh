@@ -25,7 +25,7 @@ APP_PREREQ() {
   STAT $?
 
   PRINT Create App Directory
-  mkdir -rf ${app_path} &>>$LOG_FILE
+  mkdir ${app_path} &>>$LOG_FILE
   STAT $?
 
   PRINT Download Application Content
