@@ -44,7 +44,7 @@ NODEJS() {
   id roboshop &>>$LOG_FILE
   if [ $? -ne 0 ]; then
     useradd roboshop &>>$LOG_FILE
-  useradd roboshop &>>$LOG_FILE
+  fi
   STAT $?
 
   PRINT Clearing Old Content
