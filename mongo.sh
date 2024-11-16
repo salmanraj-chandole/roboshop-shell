@@ -3,7 +3,7 @@ component=mongo
 
 PRINT Copy MongoDB repo file
 cp mongo.repo /etc/yum.repos.d/mongo.repo
-
+STAT $?
 
 PRINT Install MongoDB
 dnf install mongodb-org -y
