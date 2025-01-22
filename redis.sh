@@ -9,7 +9,7 @@ PRINT Enable redis 7
 dnf module enable redis:7 -y &>>$LOG_FILE
 STAT $?
 
-PRINT Instal Redis 7
+PRINT Install Redis 7
 dnf install redis -y &>>$LOG_FILE
 STAT $?
 
